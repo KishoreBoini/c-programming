@@ -1,4 +1,4 @@
-## Sumofrow
+## program to to calculate the sum of row in a given 2d array
 
 ```c
 //Program for sumofRow.c
@@ -38,7 +38,7 @@ return 0;
 
 ```
 
-## Uppertriansum
+## program to find the sum of upper triangle matrix in a 2d array
 
 ```c
 //Program for uppertriansum.c
