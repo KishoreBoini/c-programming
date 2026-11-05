@@ -1,0 +1,31 @@
+#include<stdio.h>			
+
+int Add_Elements(int arr[],int str,int end)
+{
+	if(str==end)
+		return arr[str];
+	int left_sum=0;
+	int right_sum=0;
+	int mid;
+	mid=str+(end-str)/2;
+	left_sum=Add_Elements(arr,str,mid );
+	right_sum=Add_Elements(arr,mid+1,end);
+return left_sum+right_sum;
+}
+
+int main()
+{
+	int n,re;
+	printf("Enter the size of the Array : ");
+	scanf("%d",&n);
+	int arr[n];
+	printf("Enter the Elements in the Array : ");
+	for(int i=0;i<n;i++)
+	{
+		scanf("%d",&arr[i]);
+	}
+	re=Add_Elements(arr,0,n-1);
+	printf("The Sum of Given Array is :%d \n",re);
+
+return 0;
+}

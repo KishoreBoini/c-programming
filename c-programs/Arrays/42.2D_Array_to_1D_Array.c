@@ -1,0 +1,57 @@
+#include<stdio.h>
+
+void TwoD_to_1D(int r,int c,int arr1[],int arr2[],int mat[r][c])
+{
+	int k=0;
+	int l=0;
+	for(int i=0;i<r;i++)
+	{
+		for(int j=0;j<c;j++)
+		{
+			arr1[k++]=mat[i][j];
+		}
+	}
+	for(int j=0;j<c;j++)
+	{
+		for(int i=0;i<r;i++)
+		{
+			arr2[l++]=mat[i][j];
+		}
+	}
+}
+
+int main()
+{
+	int r,c;
+	printf("Enter the rows of the Array : ");
+	scanf("%d",&r);
+	printf("Enter the columns of the Array : ");
+	scanf("%d",&c);
+	int mat[r][c];
+	int len=r*c;
+	int Rarr[len];
+	int Carr[len];
+	printf("Enter the Elements in the Matrix : ");
+	for(int i=0;i<r;i++)
+	{
+		for(int j=0;j<c;j++)
+		{
+			scanf("%d",&mat[i][j]);
+		}
+	}
+	TwoD_to_1D(r,c,Rarr,Carr,mat);
+	printf("matrix into array row wise : \n");
+	for(int i=0;i<len;i++)
+	{
+		printf("%d ",Rarr[i]);
+	}
+	printf("\n");
+	printf("matrix into array column wise : \n");
+	for(int i=0;i<len;i++)
+	{
+		printf("%d ",Carr[i]);
+	}
+	printf("\n");
+
+return 0;
+}

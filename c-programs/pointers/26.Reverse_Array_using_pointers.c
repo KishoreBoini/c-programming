@@ -1,0 +1,29 @@
+#include<stdio.h>
+
+void ReverseArray(int *ptr,int len)
+{
+	for(int i=0,j=len-1;i<j;i++,j--)
+	{
+		int temp=ptr[i];
+		ptr[i]=ptr[j];
+		ptr[j]=temp;
+	}
+}
+
+void main()
+{
+	int arr[5];
+	printf("Enter the array : ");
+	for(int i=0;i<5;i++)
+	{
+		scanf("%d",&arr[i]);
+	}
+	
+	ReverseArray(arr,5);
+	printf("Reversed Array = ");
+	for(int i=0;i<5;i++)
+	{
+		printf("%d ",arr[i]);
+	}
+	printf("\n");
+}

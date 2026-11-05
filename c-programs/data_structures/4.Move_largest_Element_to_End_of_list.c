@@ -1,0 +1,105 @@
+//Write a function to move the largest element to the end of a single linked list.
+
+
+#include<stdio.h>
+#include<stdlib.h>
+
+struct node{
+	int data;
+	struct node *nxt;
+};
+
+struct node *pHead;
+
+void createNode(int val)
+{
+	struct node *pNew,*pTrave;
+	pNew=malloc(sizeof(struct node));
+	if(pHead==NULL)
+	{
+		pHead=pNew;
+		pHead->data=val;
+		pHead->nxt=NULL;
+		return;
+	}
+	pTrave=pHead;
+	while(pTrave->nxt!=0)
+	{
+		pTrave=pTrave->nxt;
+	}
+	pNew->data=val;
+	pNew->nxt=NULL;
+	pTrave->nxt=pNew;
+return;
+}
+
+void MoveLarge()
+{
+	int max;
+	struct node *last,*pTrave,*pMax,*Maxprev,*prev;
+	pTrave=pHead;
+	pMax=pHead;
+	max=pTrave->data;
+	prev=NULL;
+	Maxprev=NULL;
+	while(pTrave!=NULL)
+	{
+		if(pTrave->data>max)
+		{
+			max=pTrave->data;
+			pMax=pTrave;
+			Maxprev=prev;
+		}
+	prev=pTrave;
+	last=pTrave;
+	pTrave=pTrave->nxt;
+	}
+	if(pMax==pHead)
+	{
+		pHead=pHead->nxt;
+		last->nxt=pMax;
+		pMax->nxt=NULL;
+		return;
+	}
+	else if(pMax==last)
+	{
+		return;
+	}
+	else
+	{
+		Maxprev->nxt=pMax->nxt;
+	}
+	last->nxt=pMax;
+	pMax->nxt=NULL;
+
+return;
+}
+
+void Display()
+{
+	printf("Dispaly\n");
+	int i=1;
+	struct node *pTrave;
+	pTrave=pHead;
+	while(pTrave!=NULL)
+	{
+		printf("|%d node's |address%p| data = %d|\n",i,(void*)pTrave,pTrave->data);
+		i++;
+		pTrave=pTrave->nxt;
+	}
+return;		
+}
+
+int main()
+{
+	createNode(20);
+	createNode(10);
+	createNode(80);
+	createNode(50);
+	createNode(30);
+	createNode(75);
+	Display();
+	MoveLarge();
+	Display();
+return 0;
+}

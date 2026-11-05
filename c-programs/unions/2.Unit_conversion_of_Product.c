@@ -1,0 +1,62 @@
+#include<stdio.h>
+
+union measure {
+	float feet;
+	float inches;
+	float centimeters;
+};
+
+void Convert(int size,char unit,char con)
+{
+	union measure change;
+	if(unit == 'f' && con == 'c')
+	{
+		change.centimeters = size*30.49;
+		printf("feet to centimeters = %.4f%c\n",change.centimeters,con);
+		return;
+	}
+	else if(unit == 'f'&& con == 'i')
+	{
+		change.inches = size*12;
+		printf("feet to inches %.4f%c\n",change.inches,con);
+		return;
+	}
+	if(unit == 'c' && con == 'f')
+	{
+		change.feet = size*0.0328;
+		printf("centimeters to feet = %.4f%c\n",change.feet,con);
+		return;
+	}
+	else if(unit == 'c' && con == 'i')
+	{
+		change.inches = size*0.4;
+		printf("centimeters to inches = %.4f%c\n",change.inches,con);
+		return;
+	}
+	if(unit == 'i' && con == 'c')
+	{
+		change.centimeters = size*2.54;
+		printf("inches to centimeters = %.4f%c\n",change.centimeters,con);
+		return;
+	}
+	else if(unit == 'i' && con == 'f')
+	{
+		change.feet = size*0.083;
+		printf("inches to feet = %.4f%c\n",change.feet,con);
+		return;
+	}
+	else
+		printf("Invalid unit type!\n");
+}
+
+int main()
+{
+	float size;
+	char unit,con;
+	printf("Enter the size of product (in: feet(f)/centimeters(c)/inches(i)) ");
+	scanf("%f%c",&size,&unit);
+	printf("Enter the unit to covert to feet(f)/centimeters(c)/inches(i): ");
+	scanf(" %c",&con);
+	Convert(size,unit,con);
+return 0;
+}

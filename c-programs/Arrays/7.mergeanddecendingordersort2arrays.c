@@ -1,0 +1,100 @@
+#include<stdio.h>
+
+void mergearrays(int src[],int dest[],int res[],int n);
+void sortarray(int arr[],int n);
+void uniqueelements(int darr[],int n);
+
+void mergearrays(int src[],int dest[],int res[],int n)
+{
+	int i;
+	for(i=0;i<n;i++)
+	{
+		res[i]=src[i];
+	}
+	for(int j=0;j<n;j++)
+	{
+		res[i]=dest[j];
+		i++;
+	}
+
+	sortarray(res,i);
+
+}
+void sortarray(int arr[],int n)
+{
+	int i;
+	for(i=0;i<n;i++)
+	{
+		for(int j=i+1;j<n;j++)
+		{
+
+			if(arr[i]>arr[j])
+			{
+				int temp=arr[i];
+				arr[i]=arr[j];
+				arr[j]=temp;
+			}
+		}
+	}
+	 uniqueelements(arr,i);
+	printf("Merged and sorted array !\n");
+	for(int i=0;i<n;i++)
+	{
+		printf("%d ",arr[i]);
+	}
+	printf("\n");
+}
+void uniqueelements(int darr[],int n)
+{
+	int j=0;
+	for(int i=1;i<n;i++)
+	{
+		if(darr[i]!=darr[j])		//[1,2,3,1,4,5,5]
+		{
+			j++;
+			darr[j]=darr[i];
+			
+
+		}
+	}
+	printf("unique elements in the array \n");
+	for(int i=0;i<j+1;i++)
+	{
+		printf("%d ",darr[i]);
+	}
+	printf("\n");
+
+
+}
+int main()
+{
+	int len1,len2,len;
+	int arr1[20],arr2[20],arr3[20];
+	printf("Enter the no.of elements in first array :");
+	scanf("%d",&len1);
+	printf("Enter the elements in the array :");
+	for(int i=0;i<len1;i++)
+	{
+		scanf("%d",&arr1[i]);
+
+	}
+	printf("Enter the no.of elements in second array :");
+	scanf("%d",&len2);
+	printf("Enter the elements in the array :");
+	for(int i=0;i<len2;i++)
+	{
+		scanf("%d",&arr2[i]);
+	}
+	if(len1>len2)
+	{
+		len=len1;
+	}
+	else
+	{
+		len=len2;
+	}
+	mergearrays(arr1,arr2,arr3,len);
+
+return 0;
+}
+

@@ -1,0 +1,43 @@
+#include<stdio.h>
+
+void saperatearrays(int arr[],int len)
+{
+	int j=0,k=0;
+	int Earray[len],Oarray[len];
+	for(int i=0;i<len;i++)
+	{
+		if(arr[i]%2==0)
+		{
+			Earray[j++]=arr[i];
+		}
+		else
+			Oarray[k++]=arr[i];
+	}
+	printf("odd array :\n");
+	for(int i=0;i<k;i++)
+	{
+	printf("%d ",Oarray[i]);
+	}
+	printf("\n");
+	printf("Even array : \n");
+	for(int i=0;i<k;i++)
+	{
+	printf("%d ",Earray[i]);
+	}
+	printf("\n");
+}
+
+int main()
+{
+	int n;
+	printf("Enter the n value : ");
+	scanf("%d",&n);
+	int arr[n];
+	printf("Enter the array elements : ");
+	for(int i=0;i<n;i++)
+	{
+		scanf("%d",&arr[i]);
+	}
+	saperatearrays(arr,n);
+return 0;
+}

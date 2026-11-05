@@ -1,0 +1,31 @@
+#include<stdio.h>
+
+int Add_Even_Elements(int len,int arr[])
+{
+	if(len==1)
+		return 0;
+	int i=len-1;
+	int sum=Add_Even_Elements(len-1,arr);
+	if(arr[i]%2==0)
+	{
+		sum+=arr[i];
+	}
+return sum;
+}
+
+int main()
+{
+	int n,re;
+	printf("Enter the size of the Array : ");
+	scanf("%d",&n);
+	int arr[n];
+	printf("Enter the Elements in the Array : ");
+	for(int i=0;i<n;i++)
+	{
+		scanf("%d",&arr[i]);
+	}
+	re=Add_Even_Elements(n,arr);
+	printf("%d\n",re);
+
+return 0;
+}

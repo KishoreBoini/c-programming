@@ -1,0 +1,27 @@
+#include<stdio.h>
+
+void AverageofArray(int len,int arr[])
+{
+	int average,sum=0;
+	for(int i=0;i<len;i++)
+	{
+		sum+=arr[i];	
+	}
+	average=sum/len;
+	printf("The Average of the given Array is %d\n",average);
+}
+
+int main()
+{
+	int n;
+	printf("Enter the size of Array : ");
+	scanf("%d",&n);
+	int arr[n];
+	printf("Enter the Elements in the Array : ");
+	for(int i=0;i<n;i++)
+	{
+		scanf("%d",&arr[i]);
+	}
+	AverageofArray(n,arr);
+return 0;
+}

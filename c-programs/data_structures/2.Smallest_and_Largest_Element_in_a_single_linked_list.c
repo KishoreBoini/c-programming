@@ -1,0 +1,67 @@
+//Write a function to find the smallest and largest element of a single linked list.
+#include<stdio.h>
+#include<stdlib.h>
+
+struct node{
+	int data;
+	struct node *nxt;
+};
+struct node *pHead;
+
+void createNode(int val)
+{
+	struct node *pNew,*pTrave;
+	pNew=malloc(sizeof(struct node));
+	if(pHead==NULL)
+	{
+		pHead=pNew;
+		pHead->data=val;
+		pHead->nxt=NULL;
+		return;
+	}
+	pTrave=pHead;
+	while(pTrave->nxt!=NULL)
+	{
+		pTrave=pTrave->nxt;
+	}
+	pNew->data=val;
+	pNew->nxt=NULL;
+	pTrave->nxt=pNew;
+
+return;
+}
+
+void find()
+{
+	int small,large;
+	struct node *pTrave;
+	pTrave=pHead;
+	large=pTrave->data;
+	small=pTrave->data;
+	while(pTrave!=NULL)
+	{
+		if(pTrave->data>large)
+		{
+			large=pTrave->data;
+		}
+		if(pTrave->data<small)
+		{
+			small=pTrave->data;
+		}
+		pTrave=pTrave->nxt;
+	}
+	printf("Smallest element in the list is %d\n",small);
+	printf("largest element in the list is %d\n",large);
+
+}
+int main()
+{
+	createNode(1);
+	createNode(20);
+	createNode(890);
+	createNode(40);
+	createNode(1000);
+	createNode(80);
+	find();
+return 0;
+}

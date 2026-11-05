@@ -1,0 +1,66 @@
+#include<stdio.h>
+
+void Sum_Rows_Columns(int r,int c,int arr[r+1][c+1])
+{
+	int rtemp[r],ctemp[c];
+	int tsum=0,sumR=0,sumC=0;
+	for(int i=0;i<r;i++)
+	{
+		sumR=0;
+		for(int j=0;j<c;j++)
+		{			
+			sumR+=arr[i][j];
+			tsum+=arr[i][j];
+		}
+		rtemp[i]=sumR;
+	}
+	for(int j=0;j<c;j++)
+	{	
+		sumC=0;
+		for(int i=0;i<r;i++)
+		{
+			sumC+=arr[i][j];
+			tsum+=arr[i][j];
+		}
+		ctemp[j]=sumC;
+	}
+	for (int i = 0; i < r; i++)
+	{
+	   	 arr[i][c] = rtemp[i];     
+	}
+	for (int j = 0; j < c; j++)
+	{
+    		arr[r][j] = ctemp[j];     
+	}
+	arr[r][c]=tsum;
+
+}
+
+int main()
+{
+	int r,c;
+	printf("Enter the rows of the matrix : ");
+	scanf("%d",&r);
+	printf("Enter the clomuns of the matrix : ");
+	scanf("%d",&c);
+	int arr[r+1][c+1];
+	printf("Enter the Elements of the matrix : ");
+	for(int i=0;i<r;i++)
+	{
+		for(int j=0;j<c;j++)
+		{
+			scanf("%d",&arr[i][j]);
+		}
+	}
+	Sum_Rows_Columns(r,c,arr);
+	for(int i=0;i<=r;i++)
+	{
+		for(int j=0;j<=c;j++)
+		{
+			printf("%d ",arr[i][j]);
+		}
+		printf("\n");
+	}
+
+return 0;
+}

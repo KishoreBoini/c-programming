@@ -1,0 +1,31 @@
+#include<stdio.h>
+
+void MaxMin(int *ptr,int *pmax,int *pmin,int len)
+{
+	(*pmin)=ptr[0];
+	(*pmax)=ptr[0];
+	for(int i=0;i<len;i++)
+	{
+		if(*pmax<ptr[i])
+		{
+			*pmax=ptr[i];
+		}
+		if(*pmin>ptr[i])
+		{
+			*pmin=ptr[i];
+		}
+	}
+}
+
+void main()
+{
+	int arr[10];
+	int max,min;
+	printf("Enter the array : ");
+	for(int i=0;i<10;i++)
+	{
+		scanf("%d",&arr[i]);
+	}
+	MaxMin(arr,&max,&min,10);
+	printf("Maximum = %d\nMinimum = %d\n",max,min);
+}

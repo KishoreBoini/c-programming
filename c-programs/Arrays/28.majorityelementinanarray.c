@@ -1,0 +1,48 @@
+#include<stdio.h>
+
+void MajorityElement(int len,int arr[])
+{								
+	int major,count,num,found=0;
+	num=(len/2)+1;
+	for(int i=0;i<len;i++)
+	{
+		count=0;
+		for(int j=0;j<len;j++)
+		{
+			if(arr[i]==arr[j])
+			{
+				count++;
+			}
+			
+		}
+		if(count>=num)
+		{
+			major=arr[i];
+			found=1;
+			break;
+		}
+		
+	}
+	if(found)
+	{
+		printf("The majority element is : %d\n",major);
+
+	}
+	else
+		printf("There is no majority element \n");
+}
+
+int main()
+{
+	int n;
+	printf("Enter the array size : ");
+	scanf("%d",&n);
+	int arr[n];
+	printf("Enter the array Elements : ");
+	for(int i=0;i<n;i++)
+	{
+		scanf("%d",&arr[i]);
+	}
+	MajorityElement(n,arr);
+return 0;
+}

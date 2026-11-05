@@ -1,0 +1,34 @@
+#include<stdio.h>
+
+int main()
+{
+	int r,c;
+	printf("Enter the rows for the matrix : ");
+	scanf("%d",&r);
+	printf("Enter the columns for the matrix : ");
+	scanf("%d",&c);
+	/*int arr[3][3]={{1,0,0},
+			{0,1,0},
+			{0,0,1}};
+			*/
+	int arr[r][c];
+	printf("Enter the elements of the matrix : ");
+	for(int i=0;i<r;i++)
+	{
+		for(int j=0;j<c;j++)
+		{
+			scanf("%d",&arr[i][j]);
+		}
+	}
+
+	printf("The given elements in %dX%d matrix : \n",r,c);
+	for(int i=0;i<r;i++)
+	{
+		for(int j=0;j<c;j++)
+		{
+			printf("%d ",arr[i][j]);
+		}
+		printf("\n");
+	}
+return 0;
+}

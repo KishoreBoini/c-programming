@@ -1,0 +1,27 @@
+#include<stdio.h>
+
+void Product_of_All_Elements(int len,int arr[])
+{
+	long long int  product=1;
+	for(int i=0;i<len;i++)
+	{
+		product*=arr[i];
+	}
+	printf("Product of all the Elements in the Array is : %lld\n",product);
+}
+
+int main()
+{
+	int n;
+	printf("Enter the size of the Array : ");
+	scanf("%d",&n);
+	int arr[n];
+	printf("Enter the Elements in the Array : ");
+	for(int i=0;i<n;i++)
+	{
+		scanf("%d",&arr[i]);
+	}
+	Product_of_All_Elements(n,arr);
+
+return 0;
+}

@@ -1,0 +1,65 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include <time.h>
+
+
+enum suit{
+	hearts,
+	dimonds,
+	clubs,
+	spades
+};
+
+struct card{
+	enum suit suit;
+	int rank;
+};
+
+struct card Random_playing_card()
+{
+	struct card c;
+	c.suit=rand() % 4;
+	c.rank=rand() % 13+1;
+
+return c;
+}
+void print_cards(struct card s )
+{
+	if(s.rank==1)
+		printf("Ace of ");
+	else if(s.rank==11)
+		printf("Jack of ");
+	else if (s.rank==12)
+		printf("Queen of ");
+	else if (s.rank==13)
+		printf("King of ");
+	else 
+		printf("%d of ",s.rank);
+
+	switch(s.suit)
+	{
+	case 0:
+		printf("hearts\n");
+		break;
+	case 1:
+		printf("dimonds\n");
+		break;
+	case 2:
+		printf("clubes\n");
+		break;
+	case 3:
+		printf("spades\n");
+		break;
+	}
+}
+
+
+int main()
+{
+	struct card res;
+	srand(time(0));
+	res=Random_playing_card();
+	print_cards(res);
+
+return 0;
+}

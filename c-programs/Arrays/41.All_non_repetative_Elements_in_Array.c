@@ -1,0 +1,53 @@
+#include<stdio.h>
+
+int Non_Repetative_Elements(int len,int arr[])			 
+{
+	int temp[len];
+	for(int i=0;i<len;i++)
+	{
+		temp[i]=0;
+	}
+	int k=0;
+	for(int i=0;i<len;i++)
+	{
+		if (temp[i]==0)
+		{
+			int flag=0;
+			for(int j=i+1;j<len;j++)
+			{
+				if(arr[i]==arr[j])
+				{
+					temp[j]=1;
+					flag=1;
+				}
+			}
+			if(flag==0)
+			{	
+				arr[k++]=arr[i];
+			}
+		}
+	}
+	return k;
+}
+
+int main()
+{
+	int n,re;
+	printf("Enter the size of the Array : ");
+	scanf("%d",&n);
+	int arr[n];
+	printf("Enter the Elements in the Array : ");
+	for(int i=0;i<n;i++)
+	{
+		scanf("%d",&arr[i]);
+	}
+	re=Non_Repetative_Elements(n,arr);
+	for(int i=0;i<re;i++)
+	{
+		printf("%d ",arr[i]);
+	}
+	printf("\n");
+
+
+return 0;
+}

@@ -1,0 +1,33 @@
+#include<stdio.h>
+
+void Even_Odd_Elements(int len,int arr[])
+{
+	int Ecount=0,Ocount=0;
+	for(int i=0;i<len;i++)
+	{
+		if(arr[i]%2==0)
+		{
+			Ecount++;
+		}
+		else
+		{
+			Ocount++;
+		}
+	}
+	printf("No.of Even Elements in Array are %d\nNo.of Odd Elements in Array are %d\n",Ecount,Ocount);
+}
+
+int main()
+{
+	int n;
+	printf("Enter the size of Array : ");
+	scanf("%d",&n);
+	int arr[n];
+	printf("Enter the Elements in the Array : ");
+	for(int i=0;i<n;i++)
+	{
+		scanf("%d",&arr[i]);
+	}
+	Even_Odd_Elements(n,arr);
+return 0;
+}

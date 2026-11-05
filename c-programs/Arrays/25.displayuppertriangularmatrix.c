@@ -1,0 +1,45 @@
+#include<stdio.h>
+
+void DisplayupperTriangularmatrix(int r,int c,int arr[r][c])
+{
+	printf("Upper Triangular matrix \n");
+	for(int i=0;i<r;i++)
+	{
+		for(int j=0;j<c;j++)
+		{
+			if(j>=i)
+			{
+				printf("%d",arr[i][j]);
+			}
+		
+			else
+			{
+				printf(" ");
+			}
+		}
+		printf("\n");
+	}
+		
+		
+
+}
+
+int main()
+{
+	int r,c;
+	printf("Enter the rows of the matrix : ");
+	scanf("%d",&r);
+	printf("Enter the clomuns of the matrix : ");
+	scanf("%d",&c);
+	int arr[r][c];
+	printf("Enter the Elements of the matrix : ");
+	for(int i=0;i<r;i++)
+	{
+		for(int j=0;j<c;j++)
+		{
+			scanf("%d",&arr[i][j]);
+		}
+	}
+	DisplayupperTriangularmatrix(r,c,arr);
+return 0;
+}

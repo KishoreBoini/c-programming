@@ -1,0 +1,34 @@
+#include<stdio.h>
+
+struct date{
+	int day;
+	int month;
+	int year;
+};
+
+void isleap_year(int day,int month,int year)
+{
+	struct date d;
+	d.day=day;
+	d.month=month;
+	d.year=year;
+	if(d.day>31 || d.month>12 || d.year>3000)
+	{
+		printf("Invalid date!\n");
+		return;
+	}
+	if((d.year%100 && d.year%4==0 )|| d.year%400==0)
+		printf("laep year!\n");
+	else
+		printf("Not leap yaer!\n");
+return;
+}
+
+int main()
+{
+	int day,month,year;
+	printf("Enter the date (dd/mm/yyy): ");
+	scanf("%d/%d/%d",&day,&month,&year);
+	isleap_year(day,month,year);
+return 0;
+}

@@ -1,0 +1,81 @@
+//Write a program to remove the last node of the list and insert it in the beginning, without changing info part of any node.
+
+
+#include<stdio.h>
+#include<stdlib.h>
+
+struct node{
+	int data;
+	struct node *nxt;
+};
+
+struct node *pHead;
+
+void createNode(int val)
+{
+	struct node *pNew,*pTrave;
+	pNew=malloc(sizeof(struct node));
+
+	if(pHead==NULL)
+	{
+		pHead=pNew;
+		pHead->data=val;
+		pHead->nxt=NULL;
+		return;
+	}
+	pTrave=pHead;
+	while(pTrave->nxt!=NULL)
+	{
+		pTrave=pTrave->nxt;
+	}
+	pNew->data=val;
+	pNew->nxt=NULL;
+	pTrave->nxt=pNew;
+return;
+}
+
+void Remove_Tail_to_Head()
+{
+	struct node *pTrave,*Pres,*prev;
+	pTrave=pHead;
+	while(pTrave->nxt!=NULL)
+	{
+		prev=pTrave;
+		pTrave=pTrave->nxt;
+	}
+	prev->nxt=NULL;
+	pTrave->nxt=pHead;
+	pHead=pTrave;
+return;
+}
+void display()
+{
+	printf("Display\n");
+
+	int i=1;
+	struct node *pTrave;
+	pTrave=pHead;
+	while(pTrave!=NULL)
+	{
+		printf("|%d|node|%p|%d|\n",i,(void*)pTrave,pTrave->data);
+		i++;
+		pTrave=pTrave->nxt;
+	}
+return;
+}
+
+int main()
+{
+
+	createNode(12);
+	createNode(14);
+	createNode(15);
+	createNode(16);
+	createNode(17);
+	createNode(18);
+	createNode(19);
+	display();
+	Remove_Tail_to_Head();
+	display();
+return 0;
+}

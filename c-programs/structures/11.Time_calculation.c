@@ -1,0 +1,68 @@
+#include<stdio.h>
+
+struct time{
+	int hours;
+	int minutes;
+	int seconds;
+};
+
+struct time calculate_time(struct time time1,struct time time2,struct time Ttime,char ch)
+{
+	if(ch=='a')
+	{
+		Ttime.seconds=time1.seconds+time2.seconds;
+		Ttime.minutes=time1.minutes+time2.minutes;
+		if(Ttime.seconds>=60)
+		{
+			Ttime.minutes=Ttime.minutes+1;
+			Ttime.seconds=Ttime.seconds-60;
+		}
+		Ttime.hours=time1.hours+time2.hours;
+		if(Ttime.minutes>=60)
+		{
+			Ttime.hours=Ttime.hours+1;
+			Ttime.minutes=Ttime.minutes-60;
+		}
+	}
+	else if(ch=='s')
+	{
+		if(time2.seconds>time1.seconds)
+		{
+			time1.seconds=time1.seconds+60;
+			time1.minutes=time1.minutes-1;
+		}
+		Ttime.seconds=time1.seconds-time2.seconds;
+		if(time2.minutes>time1.minutes)
+		{
+			time1.minutes=time1.minutes+60;
+			time1.hours=time1.hours-1;
+		}
+		Ttime.minutes=time1.minutes-time2.minutes;
+		if(time2.hours>time1.hours)
+		{
+			time1.hours=time1.hours+12;
+
+		}
+		Ttime.hours=time1.hours-time2.hours;
+	}
+
+
+
+return Ttime;
+}
+
+int main()
+{
+	char ch;
+	struct time time1,time2,t;
+	printf("12 hrs time format \n");
+	printf("Enter 1st time :");
+	scanf("%d%d%d",&time1.hours,&time1.minutes,&time1.seconds);
+	printf("Enter 2nd time :");
+	scanf("%d%d%d",&time2.hours,&time2.minutes,&time2.seconds);
+	printf("Addition (or) Substraction(a or s) : ");
+	scanf(" %c",&ch);
+	t=calculate_time(time1,time2,t,ch);
+	printf("%d:%d:%d\n",t.hours,t.minutes,t.seconds);
+return 0;
+}

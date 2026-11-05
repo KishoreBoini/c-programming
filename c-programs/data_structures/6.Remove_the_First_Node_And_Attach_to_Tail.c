@@ -1,0 +1,75 @@
+//Write a program to remove first node of the list and insert it at the end, without changing info part of any node.
+
+#include<stdio.h>
+#include<stdlib.h>
+
+struct node{
+	int data;
+	struct node *nxt;
+};
+
+struct node *pHead;
+
+void createNode(int val)
+{
+	struct node *pNew;
+	pNew=malloc(sizeof(struct node));
+	if(pHead==NULL)
+	{
+		pHead=pNew;
+		pHead->data=val;
+		pHead->nxt=NULL;
+		return;
+	}
+	pNew->nxt=pHead;
+	pNew->data=val;
+	pHead=pNew;
+return;
+}
+
+void MoveHead_to_Tail()
+{
+	struct node *pTrave,*Pres;
+	pTrave=pHead;
+	while(pTrave->nxt!=NULL)
+	{
+		pTrave=pTrave->nxt;
+	}
+	Pres=pHead;
+	pHead=pHead->nxt;
+	pTrave->nxt=Pres;
+	Pres->nxt=NULL;
+return;
+}
+
+void display()
+{
+	printf("Display\n");
+
+	int i=1;
+	struct node *pTrave;
+	pTrave=pHead;
+	while(pTrave!=NULL)
+	{
+		printf("|%d|node|%p|%d|\n",i,(void*)pTrave,pTrave->data);
+		i++;
+		pTrave=pTrave->nxt;
+	}
+return;
+}
+
+int main()
+{
+	createNode(10);
+	createNode(20);
+	createNode(30);
+	createNode(40);
+	createNode(50);
+	createNode(60);
+	createNode(70);
+	createNode(80);
+	display();
+	MoveHead_to_Tail();
+	display();
+return 0;
+}

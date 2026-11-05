@@ -1,0 +1,45 @@
+#include<stdio.h>
+
+void AddMats(int len,int (*ptr1)[3],int (*ptr2)[3],int (*ptr3)[3])
+{
+	for(int i=0;i<len;i++)
+	{
+		for(int j=0;j<len;j++)
+		{
+			ptr3[i][j]=ptr1[i][j]+ptr2[i][j];
+		}
+	}
+}
+
+int main()
+{
+	int mat1[3][3];
+	int mat2[3][3];
+	int mat3[3][3]={0};
+	printf("Enter the First matrix elements : ");
+	for(int i=0;i<3;i++)
+	{
+		for(int j=0;j<3;j++)
+		{
+			scanf("%d",&mat1[i][j]);
+		}
+	}
+	printf("Enter the Second matrix elements : ");
+	for(int i=0;i<3;i++)
+	{
+		for(int j=0;j<3;j++)
+		{
+			scanf("%d",&mat2[i][j]);
+		}
+	}
+	AddMats(3,mat1,mat2,mat3);
+	printf("Sum of the two Matrixes \n");
+	for(int i=0;i<3;i++)
+	{
+		for(int j=0;j<3;j++)
+		{
+			printf("%d ",mat3[i][j]);
+		}
+		printf("\n");
+	}
+}

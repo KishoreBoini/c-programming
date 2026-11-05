@@ -1,0 +1,45 @@
+#include<stdio.h>
+
+void SecondSmallest(int arr[],int len)
+{
+	int small,secsmall;
+	if(arr[0]<arr[1])
+	{
+		small=arr[0];
+		secsmall=arr[1];
+	}
+	else
+	{
+		small=arr[1];
+		secsmall=arr[0];
+	}
+	for(int i=2;i<len;i++)
+	{
+		if(arr[i]<small)
+		{
+			secsmall=small;
+			small=arr[i];
+		}
+		else if(arr[i]<secsmall && arr[i]!=small)
+		{
+			secsmall=arr[i];
+		}
+	}
+	printf("the second smallest element in the arra is : ");
+	printf("%d \n",secsmall);
+
+}
+
+int main()
+{
+	int n;
+        printf("Enter the length of thr array : ");
+        scanf("%d",&n);
+        int arr[n];
+        printf("Enter the array elements : ");
+        for(int i=0;i<n;i++)
+        {
+                  scanf("%d",&arr[i]);
+        }
+	SecondSmallest(arr,n);
+}

@@ -1,0 +1,31 @@
+#include<stdio.h>
+
+void Concate(char *dest,char *src)
+{
+	while(*dest!='\0')
+	{
+		dest++;
+	}
+	while(*src!='\0')
+	{
+		*dest=*src;
+		src++;
+		dest++;
+	}
+	*dest='\0';
+
+}
+
+int main()
+{
+	char str1[30];
+	char str2[20];
+	printf("Enter the 1st string : ");
+	scanf("%s",str1);
+	printf("Enter the 2st string : ");
+	scanf("%s",str2);
+	Concate(str1,str2);
+	printf("Attached two strings %s\n",str1);
+
+return 0;
+}

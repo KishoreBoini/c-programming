@@ -1,0 +1,36 @@
+#include<stdio.h>
+
+void Polarity_Partion(int len,int arr[])
+{
+	int j=0;
+	for(int i=0;i<len;i++)
+	{
+		if(arr[i]<0)
+		{
+			int temp=arr[i];
+			arr[i]=arr[j];
+			arr[j++]=temp;
+		}
+	}
+}
+
+int main()
+{
+	int n;
+	printf("Enter the size of the Array : ");
+	scanf("%d",&n);
+	int arr[n];
+	printf("Enter the Elements in the Array : ");
+	for(int i=0;i<n;i++)
+	{
+		scanf("%d",&arr[i]);
+	}
+	Polarity_Partion(n,arr);
+	for(int i=0;i<n;i++)
+	{
+		printf("%d ",arr[i]);
+	}
+	printf("\n");
+
+return 0;
+}

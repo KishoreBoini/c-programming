@@ -1,0 +1,44 @@
+#include<stdio.h>
+
+int Sumofnums(int max,int min)
+{
+	int sum;
+	sum=(max*(max+1)/2)-((min-1)*min/2);
+	return sum;
+}
+
+void MissingElement(int len,int arr[])
+{
+	int big,small,Nsum,sum=0;
+	big=arr[0];small=arr[0];
+	for(int i=0;i<len;i++)
+	{
+		if(arr[i]>big)
+		{
+			big=arr[i];
+		}
+		if(arr[i]<small)
+		{
+			small=arr[i];
+		}
+		sum+=arr[i];
+	}
+	Nsum=Sumofnums(big,small);
+	printf("The missing number is %d\n",Nsum-sum);
+
+}
+
+int main()
+{
+	int n;
+	printf("Enter the size of Array : ");
+	scanf("%d",&n);
+	int arr[n];
+	printf("Enter the Array Elements : ");
+	for(int i=0;i<n;i++)
+	{
+		scanf("%d",&arr[i]);
+	}
+	MissingElement(n,arr);
+return 0;
+}

@@ -1,0 +1,56 @@
+#include<stdio.h>
+
+void  MatrixAddtion(int r,int c,int src[r][c],int dest[r][c],int sum[r][c])
+{
+	for(int i=0;i<r;i++)
+	{
+		for(int j=0;j<c;j++)
+		{
+			sum[i][j]=src[i][j]+dest[i][j];	
+		}
+
+	}
+
+}
+  
+  int main()
+  {
+          int r,c;
+          printf("Enter the rows for the matrix : ");
+          scanf("%d",&r);
+          printf("Enter the columns for the matrix : ");
+          scanf("%d",&c);
+          int arr1[r][c];
+	  int arr2[r][c];
+	  int sumA[r][c];
+          printf("Enter the elements of the 1stmatrix : ");
+          for(int i=0;i<r;i++)
+	  {
+                  for(int j=0;j<c;j++)
+                  {
+                          scanf("%d",&arr1[i][j]);
+                  }
+          }
+          printf("Enter the elements of the 2ndmatrix : ");
+          for(int i=0;i<r;i++)
+          {
+                  for(int j=0;j<c;j++)
+                  {
+                          scanf("%d",&arr2[i][j]);
+                  }
+          }
+	  MatrixAddtion(r,c,arr1,arr2,sumA);
+
+  
+          printf("The sum of the given %dX%d matrix is : \n",r,c);
+          for(int i=0;i<r;i++)
+          {
+	 	  for(int j=0;j<c;j++)
+                  {
+                          printf("%d ",sumA[i][j]);
+                  }
+                  printf("\n");
+          }
+  return 0;
+ }
+

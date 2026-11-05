@@ -1,0 +1,75 @@
+#include<stdio.h>
+#include<string.h>
+
+union size{
+	float square;
+	float circle;
+	float triangle;
+	float rectangle;
+};
+
+union size Area_of_shape(float side,float high,char ch)
+{
+	union size s;
+
+	if(ch=='c')
+	{
+		s.circle=3.14*(side*side);
+	}
+	else if(ch=='s')
+	{
+		s.square=side*side;
+	}
+	else if(ch=='t')
+	{
+		s.triangle=0.5*(side*high);
+	}
+	else if(ch=='r')
+	{
+		s.rectangle=side*high;
+	}
+return s;
+
+}
+
+int main()
+{
+	union size res;
+	float len,wid;
+	char str[20];
+	printf("Enter the shape name : ");
+	scanf("%s",str);
+	if(strcmp(str,"circle")==0)
+	{
+		printf("Enter the radius :");
+		scanf("%f",&wid);
+		res=Area_of_shape(wid,0,'c');
+		printf("The area of given shape = %0.2f\n",res.circle);
+	}
+	else if(strcmp(str,"square")==0)
+	{
+		printf("Enter the side :");
+		scanf("%f",&len);
+		res=Area_of_shape(len,0,'s');
+		printf("The area of given shape = %0.2f\n",res.square);
+	}
+	else if(strcmp(str,"triangle")==0)
+	{
+		printf("Enter the base & height :");
+		scanf("%f%f",&len,&wid);
+		res=Area_of_shape(len,wid,'t');
+		printf("The area of given shape = %0.2f\n",res.triangle);
+	}
+	else if(strcmp(str,"rectangle")==0)
+	{
+		printf("Enter the length & width :");
+		scanf("%f%f",&len,&wid);
+		res=Area_of_shape(len,wid,'r');
+		printf("The area of given shape = %0.2f\n",res.rectangle);
+	}
+	else
+		printf("Invalid shape!!\n");
+
+return 0;
+}
+

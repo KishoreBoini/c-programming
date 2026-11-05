@@ -1,0 +1,53 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+
+struct studentData {
+	char name[20];
+	int rollNum;
+	float marks;
+};
+
+/*struct studentData DisplayData(struct studentData file)
+{
+}*/
+
+int main()
+{
+	char line[100];
+	int i=0;
+	struct studentData read[5];
+	FILE *file = fopen("student_data.txt","r");
+
+	while(fgets(line,sizeof(line),file)!=NULL)
+	{
+		char *colon=strchr(line,':');
+		if  (colon==NULL)continue;
+		colon++;
+		colon[strcspn(colon, "\n")] = '\0';
+		strcpy(read[i].name,colon);
+
+		fgets(line,sizeof(line),file);
+		colon=strchr(line,':');
+		if (colon==NULL)continue;
+		colon++;
+		read[i].rollNum=atoi(colon);
+
+		fgets(line,sizeof(line),file);
+		colon=strchr(line,':');
+		if(colon==NULL)continue;
+		colon++;
+		read[i].marks=atof(colon);
+
+
+		i++;
+	}
+	fclose(file);
+
+
+	for(int j=0;j<i;j++)
+	{
+		printf("%s\n%d\n%0.2f\n",read[j].name,read[j].rollNum,read[j].marks);
+	}
+}

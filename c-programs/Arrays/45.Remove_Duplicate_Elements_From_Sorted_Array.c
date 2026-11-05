@@ -1,0 +1,35 @@
+#include<stdio.h>
+
+int Remove_Duplicate_Elements(int len,int arr[])			//1 2 3 3 4 5 5 6  
+{
+	int j=0;
+	for(int i=0;i<len;i++)
+	{
+		if(arr[i]!=arr[i+1])
+		{
+			arr[j++]=arr[i];									
+		}
+	}
+return j;
+}
+
+int main()
+{
+	int n,re;
+	printf("Enter the size of the Array : ");
+	scanf("%d",&n);
+	int arr[n];
+	printf("Enter the Elements in the Array : ");
+	for(int i=0;i<n;i++)
+	{
+		scanf("%d",&arr[i]);
+	}
+	re=Remove_Duplicate_Elements(n,arr);
+	for(int i=0;i<re;i++)
+	{
+		printf("%d ",arr[i]);
+	}
+	printf("\n");
+
+return 0;
+}

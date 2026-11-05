@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+struct contents{
+	int num;
+};
+
+int main()
+{
+	struct contents *arr[5];
+	struct contents **ptr = arr;
+	for(int i=0;i<5;i++)
+	{
+		arr[i]=malloc(sizeof(struct contents));
+	}
+	printf("Enter the numbers : ");
+	for(int i=0;i<5;i++)
+	{
+		scanf("%d",&ptr[i]->num);
+	}
+	for(int i=0;i<5;i++)
+	{
+		printf("%d ",ptr[i]->num);
+	}
+	printf("\n");
+return 0;
+}

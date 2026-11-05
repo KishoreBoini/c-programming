@@ -1,0 +1,78 @@
+//Write recursive functions for the following operations on a linked list.
+//(i) Find length of the list
+
+
+#include<stdio.h>
+#include<stdlib.h>
+
+struct node{
+	int data;
+	struct node *nxt;
+};
+
+struct node *pHead;
+
+struct node* createNode(int val)
+{
+	struct node *pNew,*pTrave;
+	pNew=malloc(sizeof(struct node));
+
+	if(pHead==NULL)
+	{
+		pHead=pNew;
+		pHead->data=val;
+		pHead->nxt=NULL;
+		return pHead;
+	}
+
+	pTrave=pHead;
+	while(pTrave->nxt!=NULL)
+	{
+		pTrave=pTrave->nxt;
+	}
+	pTrave->nxt=pNew;
+	pNew->data=val;
+	pNew->nxt=NULL;
+
+return pHead;
+}
+
+/*void LengthofList(struct node* add)
+{
+	int i=0;
+	struct node *pTrave;
+	pTrave=add;
+
+	while(pTrave!=NULL)
+	{
+		i++;
+		pTrave=pTrave->nxt;
+	}
+	printf("Length of the List = %d\n",i);
+return;
+}
+*/
+void LengthofListR(struct node *add,int *count)
+{
+	if(add==NULL)
+		return;
+
+	(*count)+=1;
+	add=add->nxt;
+	LengthofListR(add,count);
+}
+
+int main()
+{
+	int count=0;
+	struct node *add;
+
+	for(int i=10;i<100;i+=10)
+	{
+		add=createNode(i);
+	}
+	
+	LengthofListR(add,&count);
+	printf("No.of Node in the List = %d\n",count);
+return 0;
+}

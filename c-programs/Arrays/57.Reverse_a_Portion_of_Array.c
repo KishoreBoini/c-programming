@@ -1,0 +1,43 @@
+#include<stdio.h>
+
+void Reverse_Portion(int len,int arr[],int num)
+{
+	int temp[num];
+	for(int i=0;i<num;i++)
+	{
+		temp[i]=arr[i];
+	}
+	for(int i=0,j=num-1;i<j;i++,j--)
+	{
+		int t=temp[i];
+		temp[i]=temp[j];
+		temp[j]=t;
+	}
+	for(int i=0;i<num;i++)
+	{
+		arr[i]=temp[i];
+	}
+
+}
+
+int main()
+{
+	int n,num;
+	printf("Enter the size of Array : ");
+	scanf("%d",&n);
+	printf("Enter the number to reverse from : ");
+	scanf("%d",&num);
+	int arr[n];
+	printf("Enter the Elements of the Array : ");
+	for(int i=0;i<n;i++)
+	{
+		scanf("%d",&arr[i]);
+	}
+	Reverse_Portion(n,arr,num);
+	for(int i=0;i<n;i++)
+	{
+		printf("%d ",arr[i]);
+	}
+	printf("\n");
+return 0;
+}

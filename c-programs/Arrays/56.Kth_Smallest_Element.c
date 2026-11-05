@@ -1,0 +1,73 @@
+#include<stdio.h>
+
+void Merge(int arr[],int str,int mid,int end)
+{
+	int temp[end-str+1];
+	int i,j,k=0;
+	i=str;
+	j=mid+1;
+	while(i<=mid && j<=end)
+	{
+		if(arr[i]<=arr[j])
+		{
+			temp[k++]=arr[i];
+			i++;
+		}
+		else
+		{
+			temp[k++]=arr[j];
+			j++;
+		}
+	}
+		while(i<=mid)
+		{
+			temp[k++]=arr[i];
+			i++;
+		}
+		while(j<=end)
+		{
+			temp[k++]=arr[j];
+			j++;
+		}
+		for(int i=0;i<k;i++)
+			arr[str+i]=temp[i];
+	
+}
+
+void MergeSort(int arr[],int str,int end)
+{
+	if(str<end)
+	{
+		int mid;
+		mid=str+(end-str)/2;
+		MergeSort(arr,str,mid);
+		MergeSort(arr,mid+1,end);
+		Merge(arr,str,mid,end);
+
+	}
+}
+
+
+int main()
+{
+	int n,k;
+	printf("Enter the size of the Array : ");
+	scanf("%d",&n);
+	int arr[n];
+	printf("Enter the Elements in the Array : ");
+	for(int i=0;i<n;i++)
+	{
+		scanf("%d",&arr[i]);
+	}
+	printf("Enter the Kth Element : ");
+	scanf("%d",&k);
+	MergeSort(arr,0,n);
+	for(int i=0;i<n;i++)
+	{
+		printf("%d ",arr[i]);
+	}
+	printf("\n");
+
+	printf("Kth Element is : %d\n",arr[k-1]);
+return 0;
+}

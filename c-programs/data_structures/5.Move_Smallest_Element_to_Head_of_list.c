@@ -1,0 +1,90 @@
+//Write a function to move the smallest element to the beginning of a single linked list.
+
+#include<stdio.h>
+#include<stdlib.h>
+
+struct node{
+	int data;
+	struct node *nxt;
+};
+
+struct node *pHead;
+
+void createNode(int val)
+{
+	struct node *pNew;
+	pNew=malloc(sizeof(struct node));
+	if(pHead==NULL)
+	{
+		pHead=pNew;
+		pHead->data=val;
+		pHead->nxt=NULL;
+		return;
+	}
+	pNew->nxt=pHead;
+	pNew->data=val;
+	pHead=pNew;
+return;
+}
+void display()
+{
+	printf("Display\n");
+	int i=1;
+	struct node *pTrave;
+	pTrave=pHead;
+	while(pTrave!=NULL)
+	{
+		printf("|%d |nodes| %p |%d|\n",i,(void*)pTrave,pTrave->data);
+		pTrave=pTrave->nxt;
+		i++;
+	}
+
+}
+
+void MoveMin()
+{
+	int min;
+	struct node *pTrave,*prev,*pMin,*Minprev,*last;
+	pTrave=pHead;
+	prev=NULL;
+	pMin=pHead;
+	Minprev=NULL;
+	min=pTrave->data;
+	while(pTrave!=NULL)
+	{
+		if(pTrave->data<min)
+		{
+			min=pTrave->data;
+			pMin=pTrave;
+			Minprev=prev;
+		}
+		prev=pTrave;
+		last=pTrave;
+		pTrave=pTrave->nxt;
+	}
+	if(pMin==pHead)
+	{
+		return;
+	}
+	else
+	{
+		Minprev->nxt=pMin->nxt;
+		pMin->nxt=pHead;
+		pHead=pMin;
+	}
+return;
+}
+
+int main()
+{
+	createNode(100);
+	createNode(20);
+	createNode(30);
+	createNode(60);
+	createNode(50);
+	createNode(90);
+	display();
+	MoveMin();
+	display();
+return 0;
+}

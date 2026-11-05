@@ -1,0 +1,39 @@
+#include<stdio.h>
+
+void Sumofrowscolumns(int r,int c,int arr[r][c])
+{
+	int sumR,sumC;
+	for(int i=0;i<r;i++)
+	{
+		sumR=0;
+		sumC=0;
+		for(int j=0 ;j<c;j++)
+		{
+			sumR+=arr[i][j];
+			sumC+=arr[j][i];
+		}
+		printf("The sum of %d Row of the given matrix is : %d\n",i+1,sumR);
+		printf("The sum of %d column of the given matrix is : %d\n",i+1,sumC);
+
+	}
+}
+
+int main()
+{
+	int r,c;
+	printf("Enter the rows of Array : ");
+	scanf("%d",&r);
+	printf("Enter the columns of Array : ");
+	scanf("%d",&c);
+	int arr[r][c];
+	printf("Enter the Elements of the Matrix : ");
+	for(int i=0;i<r;i++)
+	{
+		for(int j=0;j<c;j++)
+		{
+			scanf("%d",&arr[i][j]);
+		}
+	}
+	Sumofrowscolumns(r,c,arr);
+return 0;
+}

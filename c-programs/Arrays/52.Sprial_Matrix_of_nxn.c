@@ -1,0 +1,60 @@
+#include<stdio.h>
+
+void Print_Sprial_Matrix(int n,int arr[n][n])
+{
+	int val=1;
+	int top=0;
+	int bottom=n-1;
+	int right=n-1;
+	int left =0;
+	while(top<=bottom && left<=right)
+	{
+		for(int i=left;i<=right;i++)
+		{
+			arr[top][i]=val++;
+		}
+		top=top+1;
+		for(int j=top;j<=bottom;j++)
+		{
+			arr[j][right]=val++;
+		}
+		right=right-1;
+		if(left<=right)
+		{
+			for(int k=right;k>=left;k--)
+			{
+				arr[bottom][k]=val++;
+			}
+			bottom=bottom-1;
+		}
+		if(top<=bottom)
+		{
+			for(int l=bottom;l>=top;l--)
+			{
+				arr[l][left]=val++;
+			}
+			left=left+1;
+		}
+
+	}
+
+}
+
+int main()
+{
+	int n;
+	printf("Enter the rows of the matrix : ");
+	scanf("%d",&n);
+	int mat[n][n];
+	Print_Sprial_Matrix(n,mat);
+	for(int i=0;i<n;i++)
+	{
+		for(int j=0;j<n;j++)
+		{
+			printf("%d ",mat[i][j]);
+		}
+		printf("\n");
+	}
+
+return 0;
+}

@@ -1,0 +1,88 @@
+#include<stdio.h>
+
+int Intersection(int len,int arr1[],int arr2[],int ins[])
+{
+	int temp[len];
+	for(int i=0;i<len;i++)
+	{
+		temp[i]=0;
+	}
+	int k=0;
+	for(int i=0;i<len;i++)
+	{
+		if(temp[i]==0)
+		{
+			for(int j=0;j<len;j++)
+			{
+				if(arr1[i]==arr2[j])
+				{
+					temp[j]=1;
+					ins[k++]=arr1[i];
+				}
+			}
+		}
+	}
+	return k;
+}
+
+
+int Union(int len,int arr1[],int arr2[],int uni[])
+{
+	int k=0;
+	for(int i=0;i<len;i++)
+	{
+		uni[k++]=arr1[i];
+	}
+
+	for(int i=0;i<len;i++)
+	{
+	
+		int found=0;
+		for(int j=0;j<len;j++)
+		{
+			if(arr2[i]==arr1[j])
+			{
+				found=1;
+				break;
+			}
+		}
+		if(!found)
+		{
+			uni[k++]=arr2[i];
+		}
+		
+	}
+	return k;
+}
+
+int main()
+{
+	int n,re1,re2;
+	printf("Enter the size of the Array : ");
+	scanf("%d",&n);
+	int arr1[n],arr2[n],arr3[n],arr4[n];
+	printf("Enter the Elements of 1st  Array : ");
+	for(int i=0;i<n;i++)
+	{
+		scanf("%d",&arr1[i]);
+	}
+	printf("Enter the Elements of 2nd  Array : ");
+	for(int i=0;i<n;i++)
+	{
+		scanf("%d",&arr2[i]);
+	}
+	re1=Union(n,arr1,arr2,arr4);
+	re2=Intersection(n,arr1,arr2,arr3);
+	for(int i=0;i<re1;i++)
+	{
+		printf("%d ",arr4[i]);
+	}
+	printf("\n");
+	for(int i=0;i<re2;i++)
+	{
+		printf("%d ",arr3[i]);
+	}
+	printf("\n");
+
+return 0;
+}

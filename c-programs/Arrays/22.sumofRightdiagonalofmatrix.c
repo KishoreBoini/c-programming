@@ -1,0 +1,32 @@
+#include<stdio.h>
+
+void  MatrixrightDiagonalsum(int n,int arr[n][n])
+{
+	int sum=0;
+	for(int i=0;i<n;i++)
+	{
+		sum+=arr[i][n-i-1];
+	}
+	printf("The sum of the right diagonal of the given matrix is : %d\n`",sum);
+
+}
+  
+  int main()
+  {
+          int n;
+          printf("Enter the length  the matrix : ");
+          scanf("%d",&n);
+          int arr[n][n];
+          printf("Enter the elements of the matrix : ");
+          for(int i=0;i<n;i++)
+	  {
+                  for(int j=0;j<n;j++)
+                  {
+                          scanf("%d",&arr[i][j]);
+                  }
+          }
+	  MatrixrightDiagonalsum(n,arr);
+
+  return 0;
+ }
+

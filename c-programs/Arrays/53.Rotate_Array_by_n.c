@@ -1,0 +1,46 @@
+#include<stdio.h>
+
+
+void Rotate_Elements(int len,int ro,int arr[len])
+{
+	int temp[ro];
+	int count=0;
+	for(int i=0;i<ro;i++)
+	{
+		temp[i]=arr[i];
+	}
+	int j=0,k=0;
+	while(ro<len)
+	{
+		arr[j++]=arr[ro++];
+	}
+	while(j<len)
+	{
+		arr[j++]=temp[k++];
+	}
+}
+
+int main()
+{
+	int n,rotate;
+	printf("Enter the size of the Array : ");
+	scanf("%d",&n);
+	printf("Rotate Value :");
+	scanf("%d",&rotate);
+	int arr[n+rotate];
+	printf("Enter the Elements in the Array : ");
+	for(int i=0;i<n;i++)
+	{
+		scanf("%d",&arr[i]);
+	}
+	
+	Rotate_Elements(n,rotate,arr);
+
+	for(int i=0;i<n;i++)
+	{
+		printf("%d ",arr[i]);
+	}
+	printf("\n");
+
+return 0;
+}

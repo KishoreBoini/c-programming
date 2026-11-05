@@ -1,0 +1,26 @@
+#include<stdio.h>
+
+struct point{
+	int x;
+	int y;
+};
+
+void isequal(struct point p1,struct point p2)
+{
+	if(p1 . x == p2 . x && p1 . y == p2 . y)
+		printf("equal!\n");
+	else
+		printf("Not equal!!\n");
+}
+
+int main()
+{
+	struct point p1;
+	struct point p2;
+	p1 . x = 10;
+	p1 . y = 5;
+	p2 . x = 10;
+	p2 . y = 5;
+
+	isequal(p1,p2);
+}

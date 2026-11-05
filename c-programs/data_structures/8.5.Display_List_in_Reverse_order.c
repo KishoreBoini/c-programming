@@ -1,0 +1,60 @@
+//Write (iv) Display the list in reverse orderrecursive functions for the following operations on a linked list.
+//(iv) Display the list in reverse order
+
+
+
+#include<stdio.h>
+#include <stdlib.h>
+
+struct node{
+	int data;
+	struct node *nxt;
+};
+
+struct node *pHead;
+
+void createNode(int val)
+{
+	struct node *pNew,*pTrave;
+	pNew=malloc(sizeof(struct node));
+	if(pHead==NULL)
+	{
+		pHead=pNew;
+		pHead->data=val;
+		pHead->nxt=NULL;
+		return;
+	}
+	pTrave=pHead;
+	while(pTrave->nxt!=NULL)
+	{
+		pTrave=pTrave->nxt;
+	}
+	pNew->data=val;
+	pNew->nxt=NULL;
+	pTrave->nxt=pNew;
+return;
+}
+
+void DisplayReverseR(struct node *add,int i)
+{
+	if(add->nxt==NULL)
+	{
+		return;
+	}
+	i++;
+
+	add=add->nxt;
+	DisplayReverseR(add,i);
+	printf("%d node's data is %d\n",i,add->data);
+
+return;
+}
+
+int main()
+{
+	for(int i=0;i<100;i+=10)
+	{
+		createNode(i);
+	}
+	DisplayReverseR(pHead,0);
+}
