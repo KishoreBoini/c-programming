@@ -21,6 +21,12 @@ reading directly on GitHub.
 
 [Browse Markdown Programs](./markdown-programs/)
 
+### 3. Tools
+
+Utility scripts used to manage and maintain the repository.
+
+-convert_to_md.py – Converts C source files into formatted Markdown files.
+
 ## Topics Covered
 
 - Arrays and 2D Arrays
@@ -40,10 +46,11 @@ Compile a C program using GCC:
 gcc program.c -o program
 ./program
 ```
-## Tools
+## Tools and Technologies
 - C Programming
 - GCC Compiler
 - Linux / Ubuntu
+- Python
 - Git and GitHub
 
 ----
