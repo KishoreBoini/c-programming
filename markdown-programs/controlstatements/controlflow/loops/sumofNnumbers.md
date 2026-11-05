@@ -1,6 +1,8 @@
-# sumofNnumbers
+# Sumofnnumbers
 
 **C source:** `c-programs/controlstatements/controlflow/loops/sumofNnumbers.c`
+
+## C Source Code
 
 ```c
 #include<stdio.h>

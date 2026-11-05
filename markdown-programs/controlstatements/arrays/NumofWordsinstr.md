@@ -1,6 +1,8 @@
-# NumofWordsinstr
+# Numofwordsinstr
 
 **C source:** `c-programs/controlstatements/arrays/NumofWordsinstr.c`
+
+## C Source Code
 
 ```c
 //Program for NumofWordsinstr.c

@@ -1,6 +1,8 @@
-# 42,Dynamically_Allocated_Memory_For_array
+# ,Dynamically Allocated Memory For Array
 
 **C source:** `c-programs/pointers/42,Dynamically_Allocated_Memory_For_array.c`
+
+## C Source Code
 
 ```c
 #include<stdio.h>

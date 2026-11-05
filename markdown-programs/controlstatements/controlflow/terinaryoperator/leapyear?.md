@@ -1,6 +1,8 @@
-# leapyear?
+# Leapyear?
 
 **C source:** `c-programs/controlstatements/controlflow/terinaryoperator/leapyear?.c`
+
+## C Source Code
 
 ```c
 //Program for leapyear?.c

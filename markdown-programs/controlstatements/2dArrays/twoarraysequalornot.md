@@ -1,6 +1,8 @@
-# twoarraysequalornot
+# Twoarraysequalornot
 
 **C source:** `c-programs/controlstatements/2dArrays/twoarraysequalornot.c`
+
+## C Source Code
 
 ```c
 //Program for twoarraysequalornot.c

@@ -1,6 +1,8 @@
-# lowertriansum
+# Lowertriansum
 
 **C source:** `c-programs/controlstatements/2dArrays/lowertriansum.c`
+
+## C Source Code
 
 ```c
 //Program for lowertriansum.c

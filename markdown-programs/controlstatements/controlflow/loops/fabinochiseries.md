@@ -1,6 +1,8 @@
-# fabinochiseries
+# Fabinochiseries
 
 **C source:** `c-programs/controlstatements/controlflow/loops/fabinochiseries.c`
+
+## C Source Code
 
 ```c
 //Program for fabinochiseries.c

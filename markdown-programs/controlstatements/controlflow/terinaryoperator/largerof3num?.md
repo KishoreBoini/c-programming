@@ -1,6 +1,8 @@
-# largerof3num?
+# Largerof3Num?
 
 **C source:** `c-programs/controlstatements/controlflow/terinaryoperator/largerof3num?.c`
+
+## C Source Code
 
 ```c
 //Program for largerof3num?.c

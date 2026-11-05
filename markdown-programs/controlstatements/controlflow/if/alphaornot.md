@@ -1,6 +1,8 @@
-# alphaornot
+# Alphaornot
 
 **C source:** `c-programs/controlstatements/controlflow/if/alphaornot.c`
+
+## C Source Code
 
 ```c
 //Program for alphaornot.c

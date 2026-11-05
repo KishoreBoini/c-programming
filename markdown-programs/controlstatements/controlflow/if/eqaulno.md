@@ -1,6 +1,8 @@
-# eqaulno
+# Eqaulno
 
 **C source:** `c-programs/controlstatements/controlflow/if/eqaulno.c`
+
+## C Source Code
 
 ```c
 //Program for eqaulno.c

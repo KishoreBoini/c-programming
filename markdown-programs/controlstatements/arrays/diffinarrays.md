@@ -1,6 +1,8 @@
-# diffinarrays
+# Diffinarrays
 
 **C source:** `c-programs/controlstatements/arrays/diffinarrays.c`
+
+## C Source Code
 
 ```c
 //Program for diffinarrays.c

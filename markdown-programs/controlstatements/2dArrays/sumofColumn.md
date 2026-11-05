@@ -1,6 +1,8 @@
-# sumofColumn
+# Sumofcolumn
 
 **C source:** `c-programs/controlstatements/2dArrays/sumofColumn.c`
+
+## C Source Code
 
 ```c
 //Program for sumofColumn.c

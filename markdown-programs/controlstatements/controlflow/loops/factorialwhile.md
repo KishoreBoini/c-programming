@@ -1,6 +1,8 @@
-# factorialwhile
+# Factorialwhile
 
 **C source:** `c-programs/controlstatements/controlflow/loops/factorialwhile.c`
+
+## C Source Code
 
 ```c
 //Program for factorialwhile.c

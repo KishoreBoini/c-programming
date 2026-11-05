@@ -1,6 +1,8 @@
-# guessthenum
+# Guessthenum
 
 **C source:** `c-programs/controlstatements/controlflow/loops/guessthenum.c`
+
+## C Source Code
 
 ```c
 //Program for guessthenum.c

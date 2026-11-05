@@ -1,6 +1,8 @@
-# printreverseorder
+# Printreverseorder
 
 **C source:** `c-programs/controlstatements/2dArrays/printreverseorder.c`
+
+## C Source Code
 
 ```c
 //Program for printreverseorder.c

@@ -1,6 +1,8 @@
-# scanf
+# Scanf
 
 **C source:** `c-programs/controlstatements/printscan/scanf.c`
+
+## C Source Code
 
 ```c
 //Program for scanf.c

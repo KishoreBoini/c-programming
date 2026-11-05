@@ -1,6 +1,8 @@
-# missingnumberton
+# Missingnumberton
 
 **C source:** `c-programs/controlstatements/arrays/missingnumberton.c`
+
+## C Source Code
 
 ```c
 //Program for missingnumberton.c

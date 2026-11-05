@@ -1,6 +1,8 @@
-# stu
+# Stu
 
 **C source:** `c-programs/controlstatements/controlflow/if/stu.c`
+
+## C Source Code
 
 ```c
 //Program for stu.c

@@ -1,6 +1,8 @@
-# oddsum
+# Oddsum
 
 **C source:** `c-programs/controlstatements/controlflow/loops/oddsum.c`
+
+## C Source Code
 
 ```c
 //Program for oddsum.c

@@ -1,6 +1,8 @@
-# funfact2
+# Funfact2
 
 **C source:** `c-programs/controlstatements/functions/funfact2.c`
+
+## C Source Code
 
 ```c
 //Program for funfact2.c

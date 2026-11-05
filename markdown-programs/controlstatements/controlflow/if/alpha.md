@@ -1,6 +1,8 @@
-# alpha
+# Alpha
 
 **C source:** `c-programs/controlstatements/controlflow/if/alpha.c`
+
+## C Source Code
 
 ```c
 //Program for alpha.c

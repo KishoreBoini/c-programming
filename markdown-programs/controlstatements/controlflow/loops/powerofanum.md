@@ -1,6 +1,8 @@
-# powerofanum
+# Powerofanum
 
 **C source:** `c-programs/controlstatements/controlflow/loops/powerofanum.c`
+
+## C Source Code
 
 ```c
 //Program for powerofanum.c

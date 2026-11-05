@@ -1,6 +1,8 @@
-# reversethenum
+# Reversethenum
 
 **C source:** `c-programs/controlstatements/functions/reversethenum.c`
+
+## C Source Code
 
 ```c
 //Program for reversethenum.c

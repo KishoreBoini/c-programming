@@ -1,6 +1,8 @@
-# majoritynarray
+# Majoritynarray
 
 **C source:** `c-programs/controlstatements/arrays/majoritynarray.c`
+
+## C Source Code
 
 ```c
 //Program for majoritynarray.c

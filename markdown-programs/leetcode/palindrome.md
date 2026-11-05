@@ -1,6 +1,8 @@
-# palindrome
+# Palindrome
 
 **C source:** `c-programs/leetcode/palindrome.c`
+
+## C Source Code
 
 ```c
 #include<stdio.h>

@@ -1,6 +1,8 @@
-# datecheck
+# Datecheck
 
 **C source:** `c-programs/controlstatements/controlflow/loops/datecheck.c`
+
+## C Source Code
 
 ```c
 //Program for datecheck.c

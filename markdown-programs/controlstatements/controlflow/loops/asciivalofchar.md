@@ -1,6 +1,8 @@
-# asciivalofchar
+# Asciivalofchar
 
 **C source:** `c-programs/controlstatements/controlflow/loops/asciivalofchar.c`
+
+## C Source Code
 
 ```c
 //Program for asciivalofchar.c

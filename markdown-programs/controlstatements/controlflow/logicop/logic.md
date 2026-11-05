@@ -1,6 +1,8 @@
-# logic
+# Logic
 
 **C source:** `c-programs/controlstatements/controlflow/logicop/logic.c`
+
+## C Source Code
 
 ```c
 //Program for logic.c

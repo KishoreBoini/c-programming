@@ -1,6 +1,8 @@
-# concacateStrings
+# Concacatestrings
 
 **C source:** `c-programs/controlstatements/arrays/concacateStrings.c`
+
+## C Source Code
 
 ```c
 //Program for concacateStrings.c

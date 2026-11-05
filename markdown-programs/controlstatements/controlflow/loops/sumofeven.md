@@ -1,6 +1,8 @@
-# sumofeven
+# Sumofeven
 
 **C source:** `c-programs/controlstatements/controlflow/loops/sumofeven.c`
+
+## C Source Code
 
 ```c
 //Program for sumofeven.c

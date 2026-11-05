@@ -1,6 +1,8 @@
-# invertri
+# Invertri
 
 **C source:** `c-programs/controlstatements/controlflow/loops/patterns/invertri.c`
+
+## C Source Code
 
 ```c
 //Program for invertri.c

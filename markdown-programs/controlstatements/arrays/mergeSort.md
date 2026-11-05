@@ -1,6 +1,8 @@
-# mergeSort
+# Mergesort
 
 **C source:** `c-programs/controlstatements/arrays/mergeSort.c`
+
+## C Source Code
 
 ```c
 #include<stdio.h>

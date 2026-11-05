@@ -1,6 +1,8 @@
-# stringLength
+# Stringlength
 
 **C source:** `c-programs/controlstatements/arrays/stringLength.c`
+
+## C Source Code
 
 ```c
 //Program for stringLength.c

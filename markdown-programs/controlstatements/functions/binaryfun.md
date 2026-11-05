@@ -1,6 +1,8 @@
-# binaryfun
+# Binaryfun
 
 **C source:** `c-programs/controlstatements/functions/binaryfun.c`
+
+## C Source Code
 
 ```c
 //Program for binaryfun.c

@@ -1,6 +1,8 @@
-# countnum
+# Countnum
 
 **C source:** `c-programs/controlstatements/controlflow/loops/dowhile/countnum.c`
+
+## C Source Code
 
 ```c
 //Program for countnum.c

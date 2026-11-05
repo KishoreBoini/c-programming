@@ -1,6 +1,8 @@
-# vowelsinString
+# Vowelsinstring
 
 **C source:** `c-programs/controlstatements/arrays/vowelsinString.c`
+
+## C Source Code
 
 ```c
 //Program for vowelsinString.c

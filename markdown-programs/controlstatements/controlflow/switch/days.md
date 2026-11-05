@@ -1,6 +1,8 @@
-# days
+# Days
 
 **C source:** `c-programs/controlstatements/controlflow/switch/days.c`
+
+## C Source Code
 
 ```c
 //Program for days.c

@@ -1,6 +1,8 @@
-# staticfun2
+# Staticfun2
 
 **C source:** `c-programs/controlstatements/functions/staticfunctions/staticfun2.c`
+
+## C Source Code
 
 ```c
 //Program for staticfun2.c

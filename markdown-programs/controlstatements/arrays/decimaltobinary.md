@@ -1,6 +1,8 @@
-# decimaltobinary
+# Decimaltobinary
 
 **C source:** `c-programs/controlstatements/arrays/decimaltobinary.c`
+
+## C Source Code
 
 ```c
 //Program for decimaltobinary.c

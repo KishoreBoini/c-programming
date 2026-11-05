@@ -1,6 +1,8 @@
-# printf
+# Printf
 
 **C source:** `c-programs/controlstatements/printscan/printf.c`
+
+## C Source Code
 
 ```c
 //Program for printf.c

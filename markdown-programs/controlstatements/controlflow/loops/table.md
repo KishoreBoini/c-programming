@@ -1,6 +1,8 @@
-# table
+# Table
 
 **C source:** `c-programs/controlstatements/controlflow/loops/table.c`
+
+## C Source Code
 
 ```c
 //Program for table.c

@@ -1,6 +1,8 @@
-# duplicateElements
+# Duplicateelements
 
 **C source:** `c-programs/controlstatements/arrays/duplicateElements.c`
+
+## C Source Code
 
 ```c
 //Program for duplicateElements.c

@@ -1,6 +1,8 @@
-# secondlargestnuminarr
+# Secondlargestnuminarr
 
 **C source:** `c-programs/controlstatements/arrays/secondlargestnuminarr.c`
+
+## C Source Code
 
 ```c
 //Program for secondlargestnuminarr.c

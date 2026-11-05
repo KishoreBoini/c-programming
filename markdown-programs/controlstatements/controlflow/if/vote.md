@@ -1,6 +1,8 @@
-# vote
+# Vote
 
 **C source:** `c-programs/controlstatements/controlflow/if/vote.c`
+
+## C Source Code
 
 ```c
 //Program for vote.c

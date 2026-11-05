@@ -1,6 +1,8 @@
-# twioSum
+# Twiosum
 
 **C source:** `c-programs/leetcode/twioSum.c`
+
+## C Source Code
 
 ```c
 #include<stdio.h>

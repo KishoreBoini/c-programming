@@ -1,6 +1,8 @@
-# inc
+# Inc
 
 **C source:** `c-programs/controlstatements/controlflow/indec/inc.c`
+
+## C Source Code
 
 ```c
 //Program for inc.c

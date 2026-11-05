@@ -1,6 +1,8 @@
-# armstrong
+# Armstrong
 
 **C source:** `c-programs/controlstatements/controlflow/loops/armstrong.c`
+
+## C Source Code
 
 ```c
 //Program for armstrong.c

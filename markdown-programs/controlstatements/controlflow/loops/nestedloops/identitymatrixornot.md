@@ -1,6 +1,8 @@
-# identitymatrixornot
+# Identitymatrixornot
 
 **C source:** `c-programs/controlstatements/controlflow/loops/nestedloops/identitymatrixornot.c`
+
+## C Source Code
 
 ```c
 //Program for identitymatrixornot.c

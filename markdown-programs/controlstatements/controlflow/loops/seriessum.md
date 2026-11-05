@@ -1,6 +1,8 @@
-# seriessum
+# Seriessum
 
 **C source:** `c-programs/controlstatements/controlflow/loops/seriessum.c`
+
+## C Source Code
 
 ```c
 //Program for seriessum.c

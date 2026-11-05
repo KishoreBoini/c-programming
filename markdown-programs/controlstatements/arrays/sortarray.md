@@ -1,6 +1,8 @@
-# sortarray
+# Sortarray
 
 **C source:** `c-programs/controlstatements/arrays/sortarray.c`
+
+## C Source Code
 
 ```c
 //Program for sortarray.c

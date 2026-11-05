@@ -1,6 +1,8 @@
-# calculatorif
+# Calculatorif
 
 **C source:** `c-programs/controlstatements/controlflow/if/calculatorif.c`
+
+## C Source Code
 
 ```c
 //Program for calculatorif.c

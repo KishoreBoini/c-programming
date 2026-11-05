@@ -1,6 +1,8 @@
-# atm
+# Atm
 
 **C source:** `c-programs/controlstatements/controlflow/switch/atm.c`
+
+## C Source Code
 
 ```c
 //Program for atm.c

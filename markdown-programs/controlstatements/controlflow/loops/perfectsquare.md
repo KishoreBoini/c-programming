@@ -1,6 +1,8 @@
-# perfectsquare
+# Perfectsquare
 
 **C source:** `c-programs/controlstatements/controlflow/loops/perfectsquare.c`
+
+## C Source Code
 
 ```c
 //Program for perfectsquare.c

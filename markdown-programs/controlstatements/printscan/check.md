@@ -1,6 +1,8 @@
-# check
+# Check
 
 **C source:** `c-programs/controlstatements/printscan/check.c`
+
+## C Source Code
 
 ```c
 //Program for check.c

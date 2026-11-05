@@ -1,6 +1,8 @@
-# add
+# Add
 
 **C source:** `c-programs/controlstatements/functions/add.c`
+
+## C Source Code
 
 ```c
 //Program for add.c

@@ -1,6 +1,8 @@
-# unionofarrays
+# Unionofarrays
 
 **C source:** `c-programs/controlstatements/arrays/unionofarrays.c`
+
+## C Source Code
 
 ```c
 //Program for unionofarrays.c

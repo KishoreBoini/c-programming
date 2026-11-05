@@ -1,6 +1,8 @@
-# sumofprimenum
+# Sumofprimenum
 
 **C source:** `c-programs/controlstatements/controlflow/loops/sumofprimenum.c`
+
+## C Source Code
 
 ```c
 //Program for sumofprimenum.c

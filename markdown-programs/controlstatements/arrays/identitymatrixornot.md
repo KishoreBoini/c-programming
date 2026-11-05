@@ -1,6 +1,8 @@
-# identitymatrixornot
+# Identitymatrixornot
 
 **C source:** `c-programs/controlstatements/arrays/identitymatrixornot.c`
+
+## C Source Code
 
 ```c
 //Program for identitymatrixornot.c

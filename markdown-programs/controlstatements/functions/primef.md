@@ -1,6 +1,8 @@
-# primef
+# Primef
 
 **C source:** `c-programs/controlstatements/functions/primef.c`
+
+## C Source Code
 
 ```c
 //Program for primef.c

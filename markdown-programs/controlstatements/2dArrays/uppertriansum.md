@@ -1,6 +1,8 @@
-# uppertriansum
+# Uppertriansum
 
 **C source:** `c-programs/controlstatements/2dArrays/uppertriansum.c`
+
+## C Source Code
 
 ```c
 //Program for uppertriansum.c

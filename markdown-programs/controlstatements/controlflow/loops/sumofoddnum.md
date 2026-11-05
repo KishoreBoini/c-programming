@@ -1,6 +1,8 @@
-# sumofoddnum
+# Sumofoddnum
 
 **C source:** `c-programs/controlstatements/controlflow/loops/sumofoddnum.c`
+
+## C Source Code
 
 ```c
 //Program for sumofoddnum.c

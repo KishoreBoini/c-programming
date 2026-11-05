@@ -1,6 +1,8 @@
-# power
+# Power
 
 **C source:** `c-programs/controlstatements/functions/power.c`
+
+## C Source Code
 
 ```c
 //Program for power.c

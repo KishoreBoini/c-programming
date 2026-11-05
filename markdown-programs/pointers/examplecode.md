@@ -1,6 +1,8 @@
-# examplecode
+# Examplecode
 
 **C source:** `c-programs/pointers/examplecode.c`
+
+## C Source Code
 
 ```c
 #include <stdio.h>

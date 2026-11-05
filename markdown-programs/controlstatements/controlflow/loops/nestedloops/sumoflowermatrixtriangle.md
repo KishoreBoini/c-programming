@@ -1,6 +1,8 @@
-# sumoflowermatrixtriangle
+# Sumoflowermatrixtriangle
 
 **C source:** `c-programs/controlstatements/controlflow/loops/nestedloops/sumoflowermatrixtriangle.c`
+
+## C Source Code
 
 ```c
 //Program for sumoflowermatrixtriangle.c

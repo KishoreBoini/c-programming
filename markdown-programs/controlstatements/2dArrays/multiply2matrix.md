@@ -1,6 +1,8 @@
-# multiply2matrix
+# Multiply2Matrix
 
 **C source:** `c-programs/controlstatements/2dArrays/multiply2matrix.c`
+
+## C Source Code
 
 ```c
 //Program for multiply2matrix.c

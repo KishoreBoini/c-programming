@@ -1,6 +1,8 @@
-# mismatch
+# Mismatch
 
 **C source:** `c-programs/leetcode/mismatch.c`
+
+## C Source Code
 
 ```c
 #include<stdio.h>

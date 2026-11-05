@@ -1,6 +1,8 @@
-# stat
+# Stat
 
 **C source:** `c-programs/lsp/stat.c`
+
+## C Source Code
 
 ```c
 #include<stdio.h>

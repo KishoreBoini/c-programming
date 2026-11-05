@@ -1,6 +1,8 @@
-# areaoftriangle
+# Areaoftriangle
 
 **C source:** `c-programs/controlstatements/functions/areaoftriangle.c`
+
+## C Source Code
 
 ```c
 //Program for areaoftriangle.c

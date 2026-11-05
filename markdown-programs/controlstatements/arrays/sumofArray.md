@@ -1,6 +1,8 @@
-# sumofArray
+# Sumofarray
 
 **C source:** `c-programs/controlstatements/arrays/sumofArray.c`
+
+## C Source Code
 
 ```c
 //Program for sumofArray.c

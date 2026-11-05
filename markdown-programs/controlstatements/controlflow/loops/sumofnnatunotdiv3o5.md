@@ -1,6 +1,8 @@
-# sumofnnatunotdiv3o5
+# Sumofnnatunotdiv3O5
 
 **C source:** `c-programs/controlstatements/controlflow/loops/sumofnnatunotdiv3o5.c`
+
+## C Source Code
 
 ```c
 //Program for sumofnnatunotdiv3o5.c

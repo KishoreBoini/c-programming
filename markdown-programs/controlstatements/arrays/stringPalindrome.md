@@ -1,6 +1,8 @@
-# stringPalindrome
+# Stringpalindrome
 
 **C source:** `c-programs/controlstatements/arrays/stringPalindrome.c`
+
+## C Source Code
 
 ```c
 //Program for stringPalindrome.c

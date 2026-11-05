@@ -1,6 +1,8 @@
-# sumofuppermatrixtriangle
+# Sumofuppermatrixtriangle
 
 **C source:** `c-programs/controlstatements/controlflow/loops/nestedloops/sumofuppermatrixtriangle.c`
+
+## C Source Code
 
 ```c
 //Program for sumofuppermatrixtriangle.c

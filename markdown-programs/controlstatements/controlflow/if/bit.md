@@ -1,6 +1,8 @@
-# bit
+# Bit
 
 **C source:** `c-programs/controlstatements/controlflow/if/bit.c`
+
+## C Source Code
 
 ```c
 //Program for bit.c

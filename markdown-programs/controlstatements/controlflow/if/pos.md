@@ -1,6 +1,8 @@
-# pos
+# Pos
 
 **C source:** `c-programs/controlstatements/controlflow/if/pos.c`
+
+## C Source Code
 
 ```c
 //Program for pos.c

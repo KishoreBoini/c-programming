@@ -1,6 +1,8 @@
-# charswap
+# Charswap
 
 **C source:** `c-programs/controlstatements/keywords/charswap.c`
+
+## C Source Code
 
 ```c
 //Program for charswap.c

@@ -1,6 +1,8 @@
-# hallowsquare
+# Hallowsquare
 
 **C source:** `c-programs/controlstatements/controlflow/loops/patterns/hallowsquare.c`
+
+## C Source Code
 
 ```c
 //Program for hallowsquare.c

@@ -1,6 +1,8 @@
-# fun1
+# Fun1
 
 **C source:** `c-programs/controlstatements/functions/fun1.c`
+
+## C Source Code
 
 ```c
 //Program for fun1.c

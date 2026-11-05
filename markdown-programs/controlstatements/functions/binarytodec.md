@@ -1,6 +1,8 @@
-# binarytodec
+# Binarytodec
 
 **C source:** `c-programs/controlstatements/functions/binarytodec.c`
+
+## C Source Code
 
 ```c
 //Program for binarytodec.c

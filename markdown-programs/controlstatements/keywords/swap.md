@@ -1,6 +1,8 @@
-# swap
+# Swap
 
 **C source:** `c-programs/controlstatements/keywords/swap.c`
+
+## C Source Code
 
 ```c
 //Program for swap.c

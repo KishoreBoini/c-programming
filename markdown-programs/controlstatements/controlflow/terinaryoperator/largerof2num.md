@@ -1,6 +1,8 @@
-# largerof2num
+# Largerof2Num
 
 **C source:** `c-programs/controlstatements/controlflow/terinaryoperator/largerof2num.c`
+
+## C Source Code
 
 ```c
 //Program for largerof2num.c

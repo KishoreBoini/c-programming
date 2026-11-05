@@ -1,6 +1,8 @@
-# alphabetornot?
+# Alphabetornot?
 
 **C source:** `c-programs/controlstatements/controlflow/terinaryoperator/alphabetornot?.c`
+
+## C Source Code
 
 ```c
 //Program for alphabetornot?.c

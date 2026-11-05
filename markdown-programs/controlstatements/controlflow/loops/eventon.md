@@ -1,6 +1,8 @@
-# eventon
+# Eventon
 
 **C source:** `c-programs/controlstatements/controlflow/loops/eventon.c`
+
+## C Source Code
 
 ```c
 //Program for eventon.c

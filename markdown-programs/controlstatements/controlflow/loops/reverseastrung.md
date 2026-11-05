@@ -1,6 +1,8 @@
-# reverseastrung
+# Reverseastrung
 
 **C source:** `c-programs/controlstatements/controlflow/loops/reverseastrung.c`
+
+## C Source Code
 
 ```c
 //Program for reverseastrung.c

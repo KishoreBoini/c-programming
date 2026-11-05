@@ -1,6 +1,8 @@
-# print
+# Print
 
 **C source:** `c-programs/controlstatements/printscan/print.c`
+
+## C Source Code
 
 ```c
 //Program for print.c

@@ -1,6 +1,8 @@
-# add2matrix
+# Add2Matrix
 
 **C source:** `c-programs/controlstatements/2dArrays/add2matrix.c`
+
+## C Source Code
 
 ```c
 //Program for add2matrix.c

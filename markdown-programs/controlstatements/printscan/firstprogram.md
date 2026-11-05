@@ -1,6 +1,8 @@
-# firstprogram
+# Firstprogram
 
 **C source:** `c-programs/controlstatements/printscan/firstprogram.c`
+
+## C Source Code
 
 ```c
 //Program for firstprogram.c

@@ -1,6 +1,8 @@
-# equalarrornot
+# Equalarrornot
 
 **C source:** `c-programs/controlstatements/arrays/equalarrornot.c`
+
+## C Source Code
 
 ```c
 //Program for equalarrornot.c

@@ -1,6 +1,8 @@
-# printprimenum
+# Printprimenum
 
 **C source:** `c-programs/controlstatements/functions/printprimenum.c`
+
+## C Source Code
 
 ```c
 //Program for printprimenum.c

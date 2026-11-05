@@ -1,6 +1,8 @@
-# lcm
+# Lcm
 
 **C source:** `c-programs/controlstatements/controlflow/loops/lcm.c`
+
+## C Source Code
 
 ```c
 //Program for lcm.c

@@ -1,6 +1,8 @@
-# colonloop
+# Colonloop
 
 **C source:** `c-programs/controlstatements/controlflow/loops/colonloop.c`
+
+## C Source Code
 
 ```c
 //Program for colonloop.c

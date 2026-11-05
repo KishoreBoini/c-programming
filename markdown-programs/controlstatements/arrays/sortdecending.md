@@ -1,6 +1,8 @@
-# sortdecending
+# Sortdecending
 
 **C source:** `c-programs/controlstatements/arrays/sortdecending.c`
+
+## C Source Code
 
 ```c
 //Program for sortdecending.c

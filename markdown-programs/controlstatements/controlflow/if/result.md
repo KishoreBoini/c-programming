@@ -1,6 +1,8 @@
-# result
+# Result
 
 **C source:** `c-programs/controlstatements/controlflow/if/result.c`
+
+## C Source Code
 
 ```c
 //Program for result.c

@@ -1,6 +1,8 @@
-# dec
+# Dec
 
 **C source:** `c-programs/controlstatements/controlflow/indec/dec.c`
+
+## C Source Code
 
 ```c
 //Program for dec.c

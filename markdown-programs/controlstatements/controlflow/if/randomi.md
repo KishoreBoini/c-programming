@@ -1,6 +1,8 @@
-# randomi
+# Randomi
 
 **C source:** `c-programs/controlstatements/controlflow/if/randomi.c`
+
+## C Source Code
 
 ```c
 //Program for randomi.c

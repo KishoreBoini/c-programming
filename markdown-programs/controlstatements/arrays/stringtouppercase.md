@@ -1,6 +1,8 @@
-# stringtouppercase
+# Stringtouppercase
 
 **C source:** `c-programs/controlstatements/arrays/stringtouppercase.c`
+
+## C Source Code
 
 ```c
 //Program for stringtouppercase.c

@@ -1,6 +1,8 @@
-# unsaduplicateElements
+# Unsaduplicateelements
 
 **C source:** `c-programs/controlstatements/arrays/unsaduplicateElements.c`
+
+## C Source Code
 
 ```c
 //Program for unsaduplicateElements.c

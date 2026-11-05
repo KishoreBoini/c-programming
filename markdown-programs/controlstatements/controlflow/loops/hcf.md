@@ -1,6 +1,8 @@
-# hcf
+# Hcf
 
 **C source:** `c-programs/controlstatements/controlflow/loops/hcf.c`
+
+## C Source Code
 
 ```c
 //Program for hcf.c

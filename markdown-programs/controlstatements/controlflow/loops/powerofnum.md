@@ -1,6 +1,8 @@
-# powerofnum
+# Powerofnum
 
 **C source:** `c-programs/controlstatements/controlflow/loops/powerofnum.c`
+
+## C Source Code
 
 ```c
 //Program for powerofnum.c

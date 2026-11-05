@@ -1,6 +1,8 @@
-# palindrome
+# Palindrome
 
 **C source:** `c-programs/controlstatements/controlflow/loops/nestedloops/palindrome.c`
+
+## C Source Code
 
 ```c
 //Program for palindrome.c

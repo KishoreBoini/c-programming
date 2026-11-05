@@ -1,6 +1,8 @@
-# diffbwdates
+# Diffbwdates
 
 **C source:** `c-programs/controlstatements/controlflow/loops/diffbwdates.c`
+
+## C Source Code
 
 ```c
 //Program for diffbwdates.c

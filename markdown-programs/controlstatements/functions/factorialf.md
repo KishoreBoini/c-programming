@@ -1,6 +1,8 @@
-# factorialf
+# Factorialf
 
 **C source:** `c-programs/controlstatements/functions/factorialf.c`
+
+## C Source Code
 
 ```c
 //Program for factorialf.c

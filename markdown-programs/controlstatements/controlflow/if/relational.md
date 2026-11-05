@@ -1,6 +1,8 @@
-# relational
+# Relational
 
 **C source:** `c-programs/controlstatements/controlflow/if/relational.c`
+
+## C Source Code
 
 ```c
 //Program for relational.c

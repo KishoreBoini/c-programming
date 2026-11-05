@@ -1,6 +1,8 @@
-# matchingcase
+# Matchingcase
 
 **C source:** `c-programs/controlstatements/controlflow/switch/matchingcase.c`
+
+## C Source Code
 
 ```c
 //Program for matchingcase.c

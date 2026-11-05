@@ -1,6 +1,8 @@
-# arthsawp
+# Arthsawp
 
 **C source:** `c-programs/controlstatements/keywords/arthsawp.c`
+
+## C Source Code
 
 ```c
 //Program for arthsawp.c

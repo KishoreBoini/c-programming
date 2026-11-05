@@ -1,6 +1,8 @@
-# vowel
+# Vowel
 
 **C source:** `c-programs/controlstatements/controlflow/if/vowel.c`
+
+## C Source Code
 
 ```c
 //Program for vowel.c

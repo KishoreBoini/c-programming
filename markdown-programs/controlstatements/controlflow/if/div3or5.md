@@ -1,6 +1,8 @@
-# div3or5
+# Div3Or5
 
 **C source:** `c-programs/controlstatements/controlflow/if/div3or5.c`
+
+## C Source Code
 
 ```c
 //Program for div3or5.c

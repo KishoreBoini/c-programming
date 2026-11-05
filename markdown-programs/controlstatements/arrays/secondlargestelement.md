@@ -1,6 +1,8 @@
-# secondlargestelement
+# Secondlargestelement
 
 **C source:** `c-programs/controlstatements/arrays/secondlargestelement.c`
+
+## C Source Code
 
 ```c
 //Program for secondlargestelement.c

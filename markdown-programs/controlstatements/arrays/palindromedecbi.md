@@ -1,6 +1,8 @@
-# palindromedecbi
+# Palindromedecbi
 
 **C source:** `c-programs/controlstatements/arrays/palindromedecbi.c`
+
+## C Source Code
 
 ```c
 //Program for palindromedecbi.c

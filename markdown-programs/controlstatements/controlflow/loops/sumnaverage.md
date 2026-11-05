@@ -1,6 +1,8 @@
-# sumnaverage
+# Sumnaverage
 
 **C source:** `c-programs/controlstatements/controlflow/loops/sumnaverage.c`
+
+## C Source Code
 
 ```c
 //Program for sumnaverage.c

@@ -1,6 +1,8 @@
-# evenodd
+# Evenodd
 
 **C source:** `c-programs/controlstatements/controlflow/if/evenodd.c`
+
+## C Source Code
 
 ```c
 //Program for evenodd.c

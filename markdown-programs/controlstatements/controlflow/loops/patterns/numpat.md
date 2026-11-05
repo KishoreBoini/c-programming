@@ -1,6 +1,8 @@
-# numpat
+# Numpat
 
 **C source:** `c-programs/controlstatements/controlflow/loops/patterns/numpat.c`
+
+## C Source Code
 
 ```c
 //Program for numpat.c

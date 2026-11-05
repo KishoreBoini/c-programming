@@ -1,6 +1,8 @@
-# size
+# Size
 
 **C source:** `c-programs/controlstatements/controlflow/if/size.c`
+
+## C Source Code
 
 ```c
 //Program for size.c

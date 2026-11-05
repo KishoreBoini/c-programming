@@ -1,6 +1,8 @@
-# sub2matrix
+# Sub2Matrix
 
 **C source:** `c-programs/controlstatements/2dArrays/sub2matrix.c`
+
+## C Source Code
 
 ```c
 //Program for sub2matrix.c

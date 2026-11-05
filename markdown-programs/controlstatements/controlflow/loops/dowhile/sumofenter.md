@@ -1,6 +1,8 @@
-# sumofenter
+# Sumofenter
 
 **C source:** `c-programs/controlstatements/controlflow/loops/dowhile/sumofenter.c`
+
+## C Source Code
 
 ```c
 //Program for sumofenter.c

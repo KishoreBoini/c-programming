@@ -1,6 +1,8 @@
-# upperlowercase
+# Upperlowercase
 
 **C source:** `c-programs/controlstatements/controlflow/if/upperlowercase.c`
+
+## C Source Code
 
 ```c
 //Program for upperlowercase.c

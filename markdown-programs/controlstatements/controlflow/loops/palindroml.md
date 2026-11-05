@@ -1,6 +1,8 @@
-# palindroml
+# Palindroml
 
 **C source:** `c-programs/controlstatements/controlflow/loops/palindroml.c`
+
+## C Source Code
 
 ```c
 //Program for palindroml.c

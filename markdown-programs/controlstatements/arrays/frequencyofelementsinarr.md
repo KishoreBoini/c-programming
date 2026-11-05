@@ -1,6 +1,8 @@
-# frequencyofelementsinarr
+# Frequencyofelementsinarr
 
 **C source:** `c-programs/controlstatements/arrays/frequencyofelementsinarr.c`
+
+## C Source Code
 
 ```c
 //Program for frequencyofelementsinarr.c

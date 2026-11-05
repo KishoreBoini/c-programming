@@ -1,6 +1,8 @@
-# reversearray
+# Reversearray
 
 **C source:** `c-programs/controlstatements/arrays/reversearray.c`
+
+## C Source Code
 
 ```c
 //Program for reversearray.c

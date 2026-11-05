@@ -1,6 +1,8 @@
-# pattern
+# Pattern
 
 **C source:** `c-programs/controlstatements/controlflow/loops/patterns/pattern.c`
+
+## C Source Code
 
 ```c
 //Program for pattern.c

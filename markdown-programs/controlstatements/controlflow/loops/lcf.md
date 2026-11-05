@@ -1,6 +1,8 @@
-# lcf
+# Lcf
 
 **C source:** `c-programs/controlstatements/controlflow/loops/lcf.c`
+
+## C Source Code
 
 ```c
 //Program for lcf.c

@@ -1,6 +1,8 @@
-# sumofRow
+# Sumofrow
 
 **C source:** `c-programs/controlstatements/2dArrays/sumofRow.c`
+
+## C Source Code
 
 ```c
 //Program for sumofRow.c

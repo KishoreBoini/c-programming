@@ -1,6 +1,8 @@
-# largestnum
+# Largestnum
 
 **C source:** `c-programs/controlstatements/arrays/largestnum.c`
+
+## C Source Code
 
 ```c
 //Program for largestnum.c

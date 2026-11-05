@@ -1,6 +1,8 @@
-# longest_plaindromic_substring
+# Longest Plaindromic Substring
 
 **C source:** `c-programs/leetcode/longest_plaindromic_substring.c`
+
+## C Source Code
 
 ```c
 #include<stdio.h>

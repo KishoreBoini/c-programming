@@ -1,6 +1,8 @@
-# nospecialchar
+# Nospecialchar
 
 **C source:** `c-programs/controlstatements/arrays/nospecialchar.c`
+
+## C Source Code
 
 ```c
 //Program for nospecialchar.c

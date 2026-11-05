@@ -1,6 +1,8 @@
-# larof3
+# Larof3
 
 **C source:** `c-programs/controlstatements/controlflow/if/larof3.c`
+
+## C Source Code
 
 ```c
 //Program for larof3.c

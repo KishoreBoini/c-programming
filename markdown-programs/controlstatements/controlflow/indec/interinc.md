@@ -1,6 +1,8 @@
-# interinc
+# Interinc
 
 **C source:** `c-programs/controlstatements/controlflow/indec/interinc.c`
+
+## C Source Code
 
 ```c
 //Program for interinc.c

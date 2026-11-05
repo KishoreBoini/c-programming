@@ -1,6 +1,8 @@
-# alphacon
+# Alphacon
 
 **C source:** `c-programs/controlstatements/controlflow/if/alphacon.c`
+
+## C Source Code
 
 ```c
 //Program for alphacon.c

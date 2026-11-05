@@ -1,6 +1,8 @@
-# oddeven?
+# Oddeven?
 
 **C source:** `c-programs/controlstatements/controlflow/terinaryoperator/oddeven?.c`
+
+## C Source Code
 
 ```c
 //Program for oddeven?.c

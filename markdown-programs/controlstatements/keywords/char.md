@@ -1,6 +1,8 @@
-# char
+# Char
 
 **C source:** `c-programs/controlstatements/keywords/char.c`
+
+## C Source Code
 
 ```c
 //Program for char.c

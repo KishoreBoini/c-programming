@@ -1,6 +1,8 @@
-# linearsearch
+# Linearsearch
 
 **C source:** `c-programs/controlstatements/arrays/linearsearch.c`
+
+## C Source Code
 
 ```c
 //Program for linearsearch.c
